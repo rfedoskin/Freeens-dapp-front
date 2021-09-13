@@ -1,0 +1,219 @@
+{
+    "ens": {
+        "referrer": "0x264902Ce3200dBa13B83a168d563497d2D347B53",
+        "resolver": "0x4976fb03c32e5b8cfe2b6ccb31c09ba78ebaba41",
+        "tld": "eth"
+    },
+    "settings": {
+        "bannerTime": 3
+    },
+    "domains": [
+       
+
+        {
+            "id": 1,
+            "name": "tor",
+            "section": "paid",
+            "paid": false,
+            "price": "0.003",
+            "referrer": "0x19DdD94B94D3c68385c897846AB44Ac99DBFAe0f",
+            "resolver": null,
+            "pageBanner": {
+                "mobile":"tor_mob320_Joined.gif",
+                "desktop": "tor 480.png",
+                "ref": "https://gitcoin.co/grants/3627/free-ens-register-ethereum-eth-name-for-free"
+            },
+            "modalBanner": {
+                "mobile": null,
+                "desktop": null,
+                "ref": null
+            }
+        },
+        {
+            "id": 2,
+            "name": "vrgallery",
+            "section": "paid",
+            "paid": false,
+            "price": "0.003",
+            "referrer": "0x19DdD94B94D3c68385c897846AB44Ac99DBFAe0f",
+            "resolver": null,
+            "pageBanner": {
+                "mobile":"Vrgallery320_Joined.gif",
+                "desktop": "vrgallery_480.png",
+                "ref": "https://gitcoin.co/grants/3627/free-ens-register-ethereum-eth-name-for-free"
+            },
+            "modalBanner": {
+                "mobile": null,
+                "desktop": null,
+                "ref": null
+            }
+        },
+        
+        
+        {
+            "id": 3,
+            "name": "mymail",
+            "section": "other",
+            "paid": false,
+            "price": "0",
+            "referrer": null,
+            "resolver": null,
+            "pageBanner": {
+                "mobile": "mymail320_Joined.gif",
+                "desktop": "mymail 480.png",
+                "ref": "https://gitcoin.co/grants/3627/free-ens-register-ethereum-eth-name-for-free"
+            },
+            "modalBanner": {
+                "mobile": "mobile_banner_400.png",
+                "desktop": "600_300.png",
+                "ref": "https://gitcoin.co/grants/3627/free-ens-register-ethereum-eth-name-for-free"
+            }
+        },
+        
+       
+        
+        {
+            "id": 4,
+            "name": "digitalitems",
+            "section": "other",
+            "paid": false,
+            "price": "0",
+            "referrer": null,
+            "resolver": null,
+            "pageBanner": {
+                "mobile": "digitalitems320_Joined.gif",
+                "desktop": "digitalitems 480.png",
+                "ref": "https://gitcoin.co/grants/3627/free-ens-register-ethereum-eth-name-for-free"
+            },
+            "modalBanner": {
+                "mobile": "mobile_banner_400.png",
+                "desktop": "600_300.png",
+                "ref": "https://gitcoin.co/grants/3627/free-ens-register-ethereum-eth-name-for-free"
+            }
+        },
+        {
+            "id": 5,
+            "name": "myitems",
+            "section": "other",
+            "paid": false,
+            "price": "0",
+            "referrer": null,
+            "resolver": null,
+            "pageBanner": {
+                "mobile": "myitems320_Joined.gif",
+                "desktop": "myitems 480.png",
+                "ref": "https://gitcoin.co/grants/3627/free-ens-register-ethereum-eth-name-for-free"
+            },
+            "modalBanner": {
+                "mobile": "mobile_banner_400.png",
+                "desktop": "600_300.png",
+                "ref": "https://gitcoin.co/grants/3627/free-ens-register-ethereum-eth-name-for-free"
+            }
+        },
+        
+        
+        {
+            "id": 6,
+            "name": "dasset",
+            "section": "other",
+            "paid": false,
+            "price": "0",
+            "referrer": null,
+            "resolver": null,
+            "pageBanner": {
+                "mobile": "dassetgif.gif",
+                "desktop": "dasset_480.png",
+                "ref": "https://gitcoin.co/grants/3627/free-ens-register-ethereum-eth-name-for-free"
+            },
+            "modalBanner": {
+                "mobile": "mobile_banner_400.png",
+                "desktop": "600_300.png",
+                "ref": "https://gitcoin.co/grants/3627/free-ens-register-ethereum-eth-name-for-free"
+            }
+        },
+        
+        
+        {
+            "id": 8,
+            "name": "ethid",
+            "section": "other",
+            "paid": false,
+            "price": "0",
+            "referrer": null,
+            "pageBanner": {
+                "mobile": "portal320.png",
+                "desktop": "portal480.png",
+                "ref": "https://ensportal.com/"
+            },
+            "modalBanner": {
+                "mobile": null,
+                "desktop": null,
+                "ref": null
+            }
+        },
+        {
+            "id": 7,
+            "name": "myavatar",
+            "section": "other",
+            "paid": false,
+            "price": "0",
+            "referrer": null,
+            "pageBanner": {
+                "mobile": "portal320.png",
+                "desktop": "portal480.png",
+                "ref": "https://ensportal.com/"
+            },
+            "modalBanner": {
+                "mobile": null,
+                "desktop": null,
+                "ref": null
+            }
+        },
+        
+        
+
+        {
+            "id": 10,
+            "name": "virtualid",
+            "section": "other",
+            "paid": false,
+            "price": "0",
+            "referrer": null,
+            "resolver": null,
+            "pageBanner": {
+                "mobile": "portal320.png",
+                "desktop": "portal480.png",
+                "ref": "https://ensportal.com/"
+            },
+            "modalBanner": {
+                "mobile": null,
+                "desktop": null,
+                "ref": null
+            }
+        },
+
+        {
+            "id": 11,
+            "name": "blockchainid",
+            "section": "other",
+            "paid": false,
+            "price": "0",
+            "referrer": null,
+            "resolver": null,
+            "pageBanner": {
+                "mobile": "portal320.png",
+                "desktop": "portal480.png",
+                "ref": "https://ensportal.com/"
+            },
+            "modalBanner": {
+                "mobile": null,
+                "desktop": null,
+                "ref": null
+            }
+        }
+        
+        
+        
+        
+    ]
+}

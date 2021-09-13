@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Yellow Subdomain - Search for a name.</title>
+        <meta name="description" content="Get a free simple Ethereum name for your wallet, smart-contract or decentralize website.">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        <link href="styles.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="app.min.js" defer></script>
+    </head>
+    <body>
+        <header class="header">
+            <form id="domain_search_form">
+                <div class="header__wrapper container">
+                    <div class="header__logo">
+                        <img src="img/logo.svg" alt="Yellow Subdomain logo" />
+                    </div>
+                    <div class="header__search_bar">
+                        <input type="text" id="domain_search_input" class="header__search_bar__input" placeholder="Search for name" />
+                    </div>
+                    <div class="header__search_btn">
+                        <button class="header__search_btn__button">Search</button>
+                    </div>
+                </div>
+            </form>
+        </header>
+        <main class="main">
+            <div class="main__wrapper container">
+                <div class="desktop_view">
+                    <table class="main__content__table free_domains">
+                        <tr class="main__content__table__head main__content__row">
+                            <th class="main__content__table__name_col title">
+                                For free
+                                <span class="title__sub">3-4 characters.</span>
+                            </th>
+                            <th class="main__content__table__buttons_col"></th>
+                            <th class="main__content__table__price_col title">
+                                <span>Sponsors</span>
+                                <button class="icon_only_button title__button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+                                        <g transform="translate(-147 -928)">
+                                            <circle cx="36" cy="36" r="36" transform="translate(147 928)" fill="#4780ff" />
+                                            <line x2="37" transform="translate(164.5 964.5)" fill="none" stroke="#fff"
+                                                stroke-linecap="round" stroke-width="6" />
+                                            <line x2="37" transform="translate(183 946) rotate(90)" fill="none" stroke="#fff"
+                                                stroke-linecap="round" stroke-width="6" />
+                                        </g>
+                                    </svg>
+                                </button>
+                            </th>
+                        </tr>
+                        <tr class="main__content__row">
+                            <td class="main__content__table__name_col name">
+                                <span class="domain_name">.eth</span>
+                            </td>
+                            <td class="main__content__table__buttons_col">
+                                <button
+                                    class="buy_button buy_button-available buy_domain_btn"
+                                    data-domain-name=".eth"
+                                >
+                                    Get for free
+                                </button>
+                            </td>
+                            <td class="main__content__table__price_col">
+                                <div class="sponsor_banner"></div>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="main__content__table paid_domains">
+                        <tr class="main__content__table__head main__content__row">
+                            <th class="main__content__table__name_col title">
+                                For a price
+                                <span class="title__sub">3-4 characters.</span>
+                            </th>
+                            <th class="main__content__table__buttons_col"></th>
+                            <th class="main__content__table__price_col title">
+                                <span>Price</span>
+                                <button class="icon_only_button title__button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+                                        <g transform="translate(-147 -928)">
+                                            <circle cx="36" cy="36" r="36" transform="translate(147 928)" fill="#4780ff" />
+                                            <line x2="37" transform="translate(164.5 964.5)" fill="none" stroke="#fff"
+                                                stroke-linecap="round" stroke-width="6" />
+                                            <line x2="37" transform="translate(183 946) rotate(90)" fill="none" stroke="#fff"
+                                                stroke-linecap="round" stroke-width="6" />
+                                        </g>
+                                    </svg>
+                                </button>
+                            </th>
+                        </tr>
+                        <tr class="main__content__row">
+                            <td class="main__content__table__name_col name">
+                                <span class="domain_name">.eth</span>
+                            </td>
+                            <td class="main__content__table__buttons_col">
+                                <button 
+                                    class="buy_button buy_button-available buy_domain_btn"
+                                    data-domain-name=".eth"
+                                >
+                                    Buy
+                                </button>
+                            </td>
+                            <td class="main__content__table__price_col">
+                                <span class="domain_price">0.000 ETH</span>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="main__content__table other_domains">
+                        <tr class="main__content__table__head main__content__row">
+                            <th class="main__content__table__name_col title">Other offers</th>
+                            <th class="main__content__table__buttons_col"></th>
+                            <th class="main__content__table__price_col title">
+                                <span>Price / Sponsors</span>
+                                <button class="icon_only_button title__button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+                                        <g transform="translate(-147 -928)">
+                                            <circle cx="36" cy="36" r="36" transform="translate(147 928)" fill="#4780ff" />
+                                            <line x2="37" transform="translate(164.5 964.5)" fill="none" stroke="#fff"
+                                                stroke-linecap="round" stroke-width="6" />
+                                            <line x2="37" transform="translate(183 946) rotate(90)" fill="none" stroke="#fff"
+                                                stroke-linecap="round" stroke-width="6" />
+                                        </g>
+                                    </svg>
+                                </button>
+                            </th>
+                        </tr>
+                        <tr class="main__content__row">
+                            <td class="main__content__table__name_col name">
+                                <span class="domain_name">.eth</span>
+                            </td>
+                            <td class="main__content__table__buttons_col">
+                                <button 
+                                    class="buy_button buy_button-available buy_domain_btn"
+                                    data-domain-name=".eth"
+                                >
+                                    Buy
+                                </button>
+                            </td>
+                            <td class="main__content__table__price_col">
+                                <span class="domain_price">0.000 ETH</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="mobile_view">
+                    <div class="main__content free_domains">
+                        <!-- free domains -->
+                        <div class="main__content__title_bar title">
+                            <span>
+                                For free
+                                <span class="title__sub">3-4 characters.</span>
+                            </span>
+                            <button class="icon_only_button title__button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+                                    <g transform="translate(-147 -928)">
+                                        <circle cx="36" cy="36" r="36" transform="translate(147 928)" fill="#4780ff" />
+                                        <line x2="37" transform="translate(164.5 964.5)" fill="none" stroke="#fff" stroke-linecap="round"
+                                            stroke-width="6" />
+                                        <line x2="37" transform="translate(183 946) rotate(90)" fill="none" stroke="#fff" stroke-linecap="round"
+                                            stroke-width="6" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="main__content__row">
+                            <div class="main__content__row__top">
+                                <span class="domain_name">.eth</span>
+                                <button 
+                                    class="buy_button buy_button-available buy_domain_btn" 
+                                    data-domain-name=".eth"
+                                >
+                                    Get for free
+                                </button>
+                            </div>
+                            <div class="main__content__row__bottom">
+                                <span class="main__content__row__bottom__left">Sponsored by</span>
+                                <div class="sponsor_banner"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__content paid_domains">
+                        <!-- paid domains -->
+                        <div class="main__content__title_bar title">
+                            <span>
+                                For a price
+                                <span class="title__sub">3-4 characters.</span>
+                            </span>
+                            <button class="icon_only_button title__button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+                                    <g transform="translate(-147 -928)">
+                                        <circle cx="36" cy="36" r="36" transform="translate(147 928)" fill="#4780ff" />
+                                        <line x2="37" transform="translate(164.5 964.5)" fill="none" stroke="#fff" stroke-linecap="round"
+                                            stroke-width="6" />
+                                        <line x2="37" transform="translate(183 946) rotate(90)" fill="none" stroke="#fff" stroke-linecap="round"
+                                            stroke-width="6" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="main__content__row">
+                            <div class="main__content__row__top">
+                                <span class="domain_name">.eth</span>
+                                <button 
+                                    class="buy_button buy_button-available buy_domain_btn" 
+                                    data-domain-name=".eth"
+                                >
+                                    Buy
+                                </button>
+                            </div>
+                            <div class="main__content__row__bottom">
+                                <span class="domain_price">0.000 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__content other_domains">
+                        <!-- other domains -->
+                        <div class="main__content__title_bar title">
+                            <span>Other offers</span>
+                            <button class="icon_only_button title__button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+                                    <g transform="translate(-147 -928)">
+                                        <circle cx="36" cy="36" r="36" transform="translate(147 928)" fill="#4780ff" />
+                                        <line x2="37" transform="translate(164.5 964.5)" fill="none" stroke="#fff" stroke-linecap="round"
+                                            stroke-width="6" />
+                                        <line x2="37" transform="translate(183 946) rotate(90)" fill="none" stroke="#fff" stroke-linecap="round"
+                                            stroke-width="6" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="main__content__row">
+                            <div class="main__content__row__top">
+                                <span class="domain_name">.eth</span>
+                                <button 
+                                    class="buy_button buy_button-available buy_domain_btn" 
+                                    data-domain-name=".eth"
+                                >
+                                    Buy
+                                </button>
+                            </div>
+                            <div class="main__content__row__bottom">
+                                <span class="domain_price">0.000 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div id="modal_banner" class="modal_banner">
+            <div class="modal_banner__background">
+                <div class="modal_banner__container">
+                    <div class="modal_banner__text">
+                        The transaction for getting the name will start in 
+                        <span class="modal_banner__timer">7</span>
+                        seconds...
+                    </div>
+                    <a href="#" class="modal_banner__body" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__wrapper container">
+                <div class="footer__buttons__row">
+                    <a href="https://t.me/yellowsubdomain" target="_blank" class="icon_only_button footer__button telegram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="51" height="50" viewBox="0 0 51 50" fill="none">
+                            <mask id="mask0" maskUnits="userSpaceOnUse" x="0" y="0" width="51" height="50">
+                                <path
+                                    d="M0 25C0 11.1929 11.3211 0 25.1282 0C38.9353 0 50.2564 11.1929 50.2564 25C50.2564 38.8071 38.9353 50 25.1282 50C11.3211 50 0 38.8071 0 25Z"
+                                    fill="white"></path>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path
+                                    d="M25.1282 48C12.4123 48 2 37.6893 2 25H-2C-2 39.925 10.2299 52 25.1282 52V48ZM48.2564 25C48.2564 37.6893 37.8441 48 25.1282 48V52C40.0266 52 52.2564 39.925 52.2564 25H48.2564ZM25.1282 2C37.8441 2 48.2564 12.3107 48.2564 25H52.2564C52.2564 10.075 40.0266 -2 25.1282 -2V2ZM25.1282 -2C10.2299 -2 -2 10.075 -2 25H2C2 12.3107 12.4123 2 25.1282 2V-2Z"
+                                    fill="white"></path>
+                            </g>
+                            <path
+                                d="M32.178 31.7074C33.1755 28.9774 36.833 18.6 37.4175 15.8805C38.0825 12.8005 36.693 12.503 33.5325 13.5355C30.3737 14.568 22.2713 17.5692 20.9063 18.054C19.5413 18.5387 12.9035 20.7699 11.5263 21.4349C8.7158 22.9434 10.0825 25.2447 13.2238 26.4399C22.6213 30.9497 19.9525 28.6519 24.1473 36.9959C25.01 39.1274 27.0452 42.7586 28.9947 40.0129C30.0202 38.4519 31.3922 33.8529 32.1797 31.7057L32.178 31.7074Z"
+                                fill="white"></path>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/yellowsubdomain" target="_blank" class="icon_only_button footer__button twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="51" height="50" viewBox="0 0 51 50">
+                            <g id="Canvas" transform="translate(-9459 -1548)">
+                                <g>
+                                    <g>
+                                        <mask id="mask0_outline_ins">
+                                            <use xlink:href="#path0_fill" fill="white" transform="translate(9459.74 1548)"></use>
+                                        </mask>
+                                        <g mask="url(#mask0_outline_ins)">
+                                            <use xlink:href="#path1_stroke_2x" transform="translate(9459.74 1548)" fill="#FFFFFF"></use>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <use xlink:href="#path2_fill" transform="translate(9471.23 1561.57)" fill="#FFFFFF"></use>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <defs>
+                                <path id="path0_fill"
+                                    d="M 0 25C 0 11.1929 11.3211 0 25.1282 0C 38.9353 0 50.2564 11.1929 50.2564 25C 50.2564 38.8071 38.9353 50 25.1282 50C 11.3211 50 0 38.8071 0 25Z">
+                                </path>
+                                <path id="path1_stroke_2x"
+                                    d="M 25.1282 48C 12.4123 48 2 37.6893 2 25L -2 25C -2 39.925 10.2299 52 25.1282 52L 25.1282 48ZM 48.2564 25C 48.2564 37.6893 37.8441 48 25.1282 48L 25.1282 52C 40.0266 52 52.2564 39.925 52.2564 25L 48.2564 25ZM 25.1282 2C 37.8441 2 48.2564 12.3107 48.2564 25L 52.2564 25C 52.2564 10.075 40.0266 -2 25.1282 -2L 25.1282 2ZM 25.1282 -2C 10.2299 -2 -2 10.075 -2 25L 2 25C 2 12.3107 12.4123 2 25.1282 2L 25.1282 -2Z">
+                                </path>
+                                <path id="path2_fill"
+                                    d="M 0 20.886C 3.12926 21.1046 5.85637 20.3459 8.36984 18.4168C 7.08797 18.2625 5.96948 17.9281 5.02693 17.1822C 4.10952 16.4491 3.40575 15.536 3.02873 14.2886C 3.8456 14.2886 4.59964 14.2886 5.35368 14.2886C 5.36625 14.2371 5.37882 14.1857 5.39138 14.1214C 4.10952 13.7484 3.01616 13.0797 2.19928 12.0123C 1.38241 10.9577 0.980251 9.73594 0.942549 8.39845C 1.75943 8.62994 2.5386 8.86143 3.33034 9.08006C 3.35548 9.02861 3.39318 8.97717 3.41831 8.92573C 2.28725 7.97405 1.47038 6.82947 1.16876 5.35051C 0.879713 3.89727 1.04309 2.50833 1.78456 1.10654C 4.92639 4.86181 8.87253 6.94521 13.7235 7.29245C 13.5727 6.0707 13.5601 4.93897 13.9749 3.83297C 15.4075 -0.0380464 20.2334 -1.27266 23.237 1.50522C 23.5763 1.81387 23.8654 1.86531 24.2298 1.7367C 25.2226 1.37661 26.2029 0.990795 27.2208 0.604979C 26.8312 1.87817 25.9892 2.81699 24.9964 3.73008C 25.9641 3.47287 26.9318 3.2028 27.8869 2.94559C 27.9246 2.98417 27.9623 3.00989 28 3.04848C 27.2711 3.82011 26.5673 4.63032 25.7756 5.32479C 25.3483 5.69774 25.2101 6.04498 25.1849 6.61084C 24.9587 12.9125 22.4327 18.0053 17.0539 21.2075C 11.5745 24.4612 5.93178 24.2683 0.37702 21.1689C 0.276481 21.1046 0.18851 21.0275 0 20.886Z">
+                                </path>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="mailto:admin@yellowsubdomain.io" target="_blank" class="icon_only_button footer__button mail">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="51" height="50"
+                            viewBox="0 0 51 50" fill="none">
+                            <mask id="mask1" maskUnits="userSpaceOnUse" x="0" y="0" width="51" height="50">
+                                <path
+                                    d="M0 25C0 11.1929 11.3211 0 25.1282 0C38.9353 0 50.2564 11.1929 50.2564 25C50.2564 38.8071 38.9353 50 25.1282 50C11.3211 50 0 38.8071 0 25Z"
+                                    fill="white"></path>
+                            </mask>
+                            <g mask="url(#mask1)">
+                                <path
+                                    d="M25.1282 48C12.4123 48 2 37.6893 2 25H-2C-2 39.925 10.2299 52 25.1282 52V48ZM48.2564 25C48.2564 37.6893 37.8441 48 25.1282 48V52C40.0266 52 52.2564 39.925 52.2564 25H48.2564ZM25.1282 2C37.8441 2 48.2564 12.3107 48.2564 25H52.2564C52.2564 10.075 40.0266 -2 25.1282 -2V2ZM25.1282 -2C10.2299 -2 -2 10.075 -2 25H2C2 12.3107 12.4123 2 25.1282 2V-2Z"
+                                    fill="white"></path>
+                            </g>
+                            <path
+                                d="M28.8769 24.9356L39.6582 37H10.3408L21.1221 24.9356L25 28.3281L28.8769 24.9356ZM39.4805 13H10.5186L25 25.6719L39.4805 13ZM30.3828 23.6191L41 35.5V14.3281L30.3828 23.6191ZM9 14.3281V35.5L19.6162 23.6172L9 14.3281Z"
+                                fill="white"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__copyright">
+                    © 2020 Yellowsubdomain.io
+                    <br/>
+                    <div style="text-align: center;">Beta</div>
+                </div>
+                <!-- <div class="footer__links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of service</a>
+                </div> -->
+            </div>
+        </footer>
+    </body>
+</html>
